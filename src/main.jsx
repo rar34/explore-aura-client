@@ -13,6 +13,7 @@ import AddTouristsSpot from './components/Tourists/AddTouristsSpot.jsx';
 import MyList from './components/Tourists/MyList.jsx';
 import Register from './components/UserInfo/Register.jsx';
 import FirebaseProvider from './components/FirebaseProvider/FirebaseProvider.jsx';
+import PrivateRoutes from './components/Routes/PrivateRoutes.jsx';
 
 
 const router = createBrowserRouter([
@@ -38,11 +39,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/add-tourists-spot",
-        element: <AddTouristsSpot />
+        element: <PrivateRoutes><AddTouristsSpot /></PrivateRoutes>
       },
       {
         path: "/my-list",
-        element: <MyList />
+        element: <PrivateRoutes><MyList /></PrivateRoutes>
       }
     ]
   },
