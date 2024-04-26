@@ -76,7 +76,7 @@ const Navbar = () => {
                     :
                     <>
                         <Link to="/login"><button className="btn btn-success text-white mr-3">Login</button></Link>
-                        {/* <Link to="/register"><button className="btn btn-success text-white">Register</button></Link> */}
+                        <Link to="/register"><button className="btn btn-success text-white">Register</button></Link>
                     </>
                 }
                 <label className="cursor-pointer grid place-items-center">
