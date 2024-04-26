@@ -1,18 +1,17 @@
 import { Link } from "react-router-dom";
-// import { AuthContext } from "../../FirebaseProvider/FirebaseProvider";
 import { useContext, useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
+import Swal from "sweetalert2";
+import { toast } from "react-toastify";
 
 const Register = () => {
 
     const [showPassword, setShowPassword] = useState(false)
     const navigate = useNavigate();
-    // const { createUser, updateUserProfile } = useContext(AuthContext)
+    const { createUser, updateUserProfile } = useContext(AuthContext)
 
     const {
         register,
@@ -20,7 +19,6 @@ const Register = () => {
         formState: { errors },
     } = useForm()
     const onSubmit = (data) => {
-        console.log("data inside registration", data)
         const { email, password, name, photoURL } = data;
         if (password.length < 6) {
             return toast('Password must be 6 character long')
@@ -35,8 +33,11 @@ const Register = () => {
             .then(() => {
                 updateUserProfile(name, photoURL)
                     .then(() => {
-                        toast("User created successfully")
-                        // window.location.reload()
+                        Swal.fire({
+                            title: "Success",
+                            text: "Registration successful",
+                            icon: "success"
+                        });
                         navigate("/")
 
                     })

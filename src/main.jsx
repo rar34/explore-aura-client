@@ -12,6 +12,8 @@ import AllTouristsSpot from './components/Tourists/AllTouristsSpot.jsx';
 import AddTouristsSpot from './components/Tourists/AddTouristsSpot.jsx';
 import MyList from './components/Tourists/MyList.jsx';
 import Register from './components/UserInfo/Register.jsx';
+import FirebaseProvider from './components/FirebaseProvider/FirebaseProvider.jsx';
+
 
 const router = createBrowserRouter([
   {
@@ -48,6 +50,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+    <FirebaseProvider>
+      <RouterProvider router={router} />
+    </FirebaseProvider>
   </React.StrictMode>,
 )
