@@ -31,6 +31,7 @@ const Navbar = () => {
             <div className="navbar-end">
                 <Link to="/login"><button className="btn btn-success">Login</button></Link>
                 <Link to="/logout"><button className="btn btn-success">Logout</button></Link>
+                <Link to="/register"><button className="btn btn-success">Register</button></Link>
             </div>
         </div>
     );
