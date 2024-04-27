@@ -14,12 +14,15 @@ import MyList from './components/Tourists/MyList.jsx';
 import Register from './components/UserInfo/Register.jsx';
 import FirebaseProvider from './components/FirebaseProvider/FirebaseProvider.jsx';
 import PrivateRoutes from './components/Routes/PrivateRoutes.jsx';
+import ViewDetails from './components/Tourists/ViewDetails.jsx';
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -36,7 +39,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/all-tourists-spot",
-        element: <AllTouristsSpot />
+        element: <AllTouristsSpot />,
+        loader: () => fetch("http://localhost:5000/touristPlace")
       },
       {
         path: "/add-tourists-spot",
@@ -45,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/my-list",
         element: <PrivateRoutes><MyList /></PrivateRoutes>
+      },
+      {
+        path: "/view-details",
+        element: <ViewDetails />
       }
     ]
   },

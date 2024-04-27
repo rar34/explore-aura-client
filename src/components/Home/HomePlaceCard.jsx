@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom';
 
 const HomePlaceCard = ({ place }) => {
     const { tourists_spot_name, country_name, short_description, image } = place;
@@ -10,7 +11,7 @@ const HomePlaceCard = ({ place }) => {
                 <h4 className='text-xl font-semibold'>{country_name}</h4>
                 <p>{short_description}</p>
                 <div className="card-actions justify-end">
-                    {/* <button className="btn btn-primary">Buy Now</button> */}
+                    <Link to="/view-details"><button className="btn btn-success text-white">View Details</button></Link>
                 </div>
             </div>
         </div>

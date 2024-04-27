@@ -23,7 +23,6 @@ const Footer = () => {
                 <a className="link link-hover">Style Guid</a>
                 <a className="link link-hover">Advertisement</a>
             </nav>
-
         </footer>
     );
 };
