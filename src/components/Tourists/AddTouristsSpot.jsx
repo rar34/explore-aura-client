@@ -8,7 +8,7 @@ const AddTouristsSpot = () => {
     const handleAddTouristSpot = e => {
         e.preventDefault();
         const form = e.target;
-        const tourists_spot_ame = form.touristSpotName.value;
+        const tourists_spot_name = form.touristSpotName.value;
         const country_name = form.countryList.value;
         const location = form.location.value;
         const image = form.photoURL.value;
@@ -19,7 +19,7 @@ const AddTouristsSpot = () => {
         // const userName = form.userName.value;
         const short_description = form.shortDescription.value;
 
-        const newPlace = { tourists_spot_ame, country_name, location, image, seasonality, averageCost, travel_time, totalVisitorsPerYear, short_description, user_name: user.displayName, user_email: user.email }
+        const newPlace = { tourists_spot_name, country_name, location, image, seasonality, averageCost, travel_time, totalVisitorsPerYear, short_description, user_name: user.displayName, user_email: user.email }
         form.reset();
 
         // console.log(newPlace)

@@ -1,10 +1,19 @@
+import { useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
+import HomePlaceCard from "./HomePlaceCard";
 
 const Home = () => {
+    const loadedPlaces = useLoaderData();
+    console.log(loadedPlaces)
     return (
         <div className="px-4 md:px-20 my-10">
             <Banner></Banner>
-            <h2 className="text-3xl">This is home</h2>
+            <h2 className="my-14 text-center font-bold text-3xl">Popular Places to visit</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {
+                    loadedPlaces.map(place => <HomePlaceCard key={place._id} place={place}></HomePlaceCard>)
+                }
+            </div>
         </div>
     );
 };
