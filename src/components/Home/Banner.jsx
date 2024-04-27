@@ -25,48 +25,48 @@ const Banner = () => {
 
 
                 <SwiperSlide>
-                    <div className="hero md:min-h-[750px]" style={{ backgroundImage: 'url(https://i.ibb.co/XLqWtZS/1.jpg)' }}>
+                    <div className="hero md:min-h-[750px]" style={{ backgroundImage: 'url(https://i.ibb.co/fFBT7Xr/coxsbazar.jpg)' }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
                             <div className="max-w-md">
-                                <h1 className="mb-5 text-5xl font-bold">Luxury Villa with Ocean View</h1>
-                                <p className="mb-5">Stunning luxury villa with breathtaking ocean views. Spacious living areas, modern kitchen, and private swimming pool.</p>
+                                <h1 className="mb-5 text-5xl font-bold">Cox&apos;s Bazar, Bangladesh</h1>
+                                <p className="mb-5">Cox&apos;s Bazar, Bangladesh: Longest natural sea beach, vibrant culture, seafood delights, and stunning sunsets attract tourists worldwide.</p>
                                 <a href='#products' className="btn btn-success text-white">Explore More</a>
                             </div>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="hero md:min-h-[750px]" style={{ backgroundImage: 'url(https://i.ibb.co/KF4tyPk/2.jpg)' }}>
+                    <div className="hero md:min-h-[750px]" style={{ backgroundImage: 'url(https://i.ibb.co/wJn3MPw/Ha-Long-Bay.jpg)' }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
                             <div className="max-w-md">
-                                <h1 className="mb-5 text-5xl font-bold">Cozy Townhouse in Historic District</h1>
-                                <p className="mb-5">Charming townhouse located in a historic district. Renovated interior with exposed brick walls and a cozy fireplace.</p>
+                                <h1 className="mb-5 text-5xl font-bold">Ha Long Bay, Vietnam</h1>
+                                <p className="mb-5">UNESCO World Heritage site, iconic limestone karsts, emerald waters, scenic boat tours, and rich cultural heritage allure visitors.</p>
                                 <a href='#products' className="btn btn-success text-white">Explore More</a>
                             </div>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="hero md:min-h-[750px]" style={{ backgroundImage: 'url(https://i.ibb.co/Qp4c969/3.jpg)' }}>
+                    <div className="hero md:min-h-[750px]" style={{ backgroundImage: 'url(https://i.ibb.co/CPjPHGq/kuawalampur.jpg)' }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
                             <div className="max-w-md">
-                                <h1 className="mb-5 text-5xl font-bold">Modern Downtown Apartment</h1>
-                                <p className="mb-5">Sleek and modern apartment in the heart of the city. Floor-to-ceiling windows offer panoramic city views.</p>
+                                <h1 className="mb-5 text-5xl font-bold">Kuala Lumpur, Malaysia,</h1>
+                                <p className="mb-5">Kuala Lumpur: vibrant capital of Malaysia, known for its diverse culture, iconic Petronas Towers, bustling markets, and delicious street food.</p>
                                 <a href='#products' className="btn btn-success text-white">Explore More</a>
                             </div>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className="hero md:min-h-[750px]" style={{ backgroundImage: 'url(https://i.ibb.co/ypnSYwf/4.jpg)' }}>
+                    <div className="hero md:min-h-[750px]" style={{ backgroundImage: 'url(https://i.ibb.co/RT0dWf5/bankok.jpg)' }}>
                         <div className="hero-overlay bg-opacity-60"></div>
                         <div className="hero-content text-center text-neutral-content">
                             <div className="max-w-md">
-                                <h1 className="mb-5 text-5xl font-bold">Student Housing Near Campus</h1>
-                                <p className="mb-5">Convenient student housing just steps away from campus. Fully furnished with modern amenities.</p>
+                                <h1 className="mb-5 text-5xl font-bold">Bangkok, Thailand</h1>
+                                <p className="mb-5">Bangkok: Thailand&apos;s bustling capital, famous for ornate temples, vibrant street life, floating markets, and exquisite cuisine blending sweet, sour, and spicy flavors.</p>
                                 <a href='#products' className="btn btn-success text-white">Explore More</a>
                             </div>
                         </div>
