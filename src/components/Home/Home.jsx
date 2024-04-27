@@ -11,7 +11,7 @@ const Home = () => {
             <h2 className="my-14 text-center font-bold text-3xl">Popular Places to visit</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {
-                    loadedPlaces.map(place => <HomePlaceCard key={place._id} place={place}></HomePlaceCard>)
+                    loadedPlaces.slice(0,6).map(place => <HomePlaceCard key={place._id} place={place}></HomePlaceCard>)
                 }
             </div>
         </div>

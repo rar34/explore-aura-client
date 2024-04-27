@@ -10,7 +10,7 @@ const HomePlaceCard = ({ place }) => {
                 <h4 className='text-xl font-semibold'>{country_name}</h4>
                 <p>{short_description}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
+                    {/* <button className="btn btn-primary">Buy Now</button> */}
                 </div>
             </div>
         </div>
