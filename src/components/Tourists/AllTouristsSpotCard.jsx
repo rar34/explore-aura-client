@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom';
 
 const AllTouristsSpotCard = ({ place }) => {
-    console.log(place)
+    // console.log(place)
     const { image, tourists_spot_name, averageCost, totalVisitorsPerYear, travel_time, seasonality } = place;
     return (
         <div className="card bg-base-100 shadow-xl">
