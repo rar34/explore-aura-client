@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 import { useNavigate, useLocation } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
-// import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 
 const Login = () => {
     const { signInUser, googleLogin, gitHubLogin } = useContext(AuthContext);
