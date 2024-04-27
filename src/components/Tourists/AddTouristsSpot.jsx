@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
+import Swal from "sweetalert2";
 
 const AddTouristsSpot = () => {
 
@@ -7,21 +8,38 @@ const AddTouristsSpot = () => {
     const handleAddTouristSpot = e => {
         e.preventDefault();
         const form = e.target;
-        const touristSportName = form.touristSpotName.value;
-        const countryName = form.countryList.value;
+        const tourists_spot_ame = form.touristSpotName.value;
+        const country_name = form.countryList.value;
         const location = form.location.value;
-        const photoURL = form.photoURL.value;
+        const image = form.photoURL.value;
         const seasonality = form.seasonality.value;
         const averageCost = form.averageCost.value;
-        const travelTime = form.travelTime.value;
+        const travel_time = form.travelTime.value;
         const totalVisitorsPerYear = form.totalVisitorsPerYear.value;
-        const userName = form.userName.value;
-        const shortDescription = form.shortDescription.value;
+        // const userName = form.userName.value;
+        const short_description = form.shortDescription.value;
 
-        const place = { touristSportName, countryName, location, photoURL, seasonality, averageCost, travelTime, totalVisitorsPerYear, userName, shortDescription, email: user.email }
-
+        const newPlace = { tourists_spot_ame, country_name, location, image, seasonality, averageCost, travel_time, totalVisitorsPerYear, short_description, user_name: user.displayName, user_email: user.email }
         form.reset();
-        console.log(place)
+
+        // console.log(newPlace)
+        // send data to the server
+        fetch("http://localhost:5000/touristPlace",{
+            method: 'POST',
+            headers: { 'content-type': 'application/json'},
+            body: JSON.stringify(newPlace)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if(data.insertedId){
+                    Swal.fire({
+                        title: 'Success!',
+                        text: 'Places added successfully',
+                        icon: 'success',
+                        confirmButtonText: 'Ok'
+                      })
+                }
+            })
     }
 
     return (
@@ -99,13 +117,13 @@ const AddTouristsSpot = () => {
                 </div>
                 {/* User Name */}
                 <div className="md:flex mb-4">
-                    <label className="form-control w-full ">
+                    {/* <label className="form-control w-full ">
                         <div className="label">
                             <span className="label-text font-medium">User Name</span>
                         </div>
                         <input name="userName" type="text" placeholder="User Name" className="input input-bordered w-full " />
-                    </label>
-                    <label className="form-control md:ml-4 w-full ">
+                    </label> */}
+                    <label className="form-control w-full ">
                         <div className="label">
                             <span className="label-text font-medium">Short Description</span>
                         </div>
