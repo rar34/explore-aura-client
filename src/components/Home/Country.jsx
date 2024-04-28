@@ -17,7 +17,7 @@ const Country = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {
                     countries.map(country =>
-                        <Link key={country._id} to="/">
+                        <Link key={country._id} to={`/countryDetails/${country.country_name}`}>
                             <div className="card card-compact bg-base-100 shadow-lg">
                                 <figure><img src={country.image} alt="" /></figure>
                                 <div className="card-body">

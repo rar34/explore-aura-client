@@ -9,9 +9,9 @@ const AllTouristsSpotCard = ({ place }) => {
             <figure><img src={image} alt="" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{tourists_spot_name}</h2>
-                <p className='font-medium flex justify-between px-4 text-gray-500'><span>Average Cost: ${averageCost}</span> <span>Travel Time: {travel_time}</span></p> <hr />
-                <p className='font-medium flex justify-between px-4 text-gray-500'><span>Total Visitors per Year: {totalVisitorsPerYear}</span> <span>Seasonality: {seasonality}</span></p>
-                <Link to={`/view-details/${_id}`}><button className="btn w-full my-4 btn-success">View Details</button></Link>
+                <p className='font-medium flex flex-col md:flex-row justify-between px-4 text-gray-500'><span>Average Cost: ${averageCost}</span> <span>Travel Time: {travel_time}</span></p> <hr />
+                <p className='font-medium flex flex-col md:flex-row justify-between px-4 text-gray-500'><span>Total Visitors per Year: {totalVisitorsPerYear}</span> <span>Seasonality: {seasonality}</span></p>
+                <Link to={`/view-details/${_id}`}><button className="btn text-white w-full my-4 btn-success">View Details</button></Link>
 
             </div>
         </div>

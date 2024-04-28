@@ -17,6 +17,7 @@ import PrivateRoutes from './components/Routes/PrivateRoutes.jsx';
 import ViewDetails from './components/Tourists/ViewDetails.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import UpdatePlace from './components/Tourists/UpdatePlace.jsx';
+import CountryDetails from './components/Home/CountryDetails.jsx';
 
 
 const router = createBrowserRouter([
@@ -60,6 +61,11 @@ const router = createBrowserRouter([
         path: "/updatePlace/:id",
         element: <UpdatePlace />,
         loader: ({ params }) => fetch(`http://localhost:5000/touristPlaces/${params.id}`)
+      },
+      {
+        path: "/countryDetails/:country_name",
+        element: <CountryDetails />,
+        loader: () => fetch("http://localhost:5000/touristPlace")
       }
     ]
   },

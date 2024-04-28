@@ -10,7 +10,7 @@ const HomePlaceCard = ({ place }) => {
                 <h2 className="text-2xl font-bold">{tourists_spot_name}</h2>
                 <h4 className='text-xl font-semibold'>{country_name}</h4>
                 <p>{short_description}</p>
-                <Link to={`/view-details/${_id}`}><button className="btn w-full my-4 btn-success">View Details</button></Link>
+                <Link to={`/view-details/${_id}`}><button className="btn text-white w-full my-4 btn-success">View Details</button></Link>
             </div>
         </div>
     );
