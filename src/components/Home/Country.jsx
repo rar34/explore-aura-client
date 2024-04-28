@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Typewriter } from "react-simple-typewriter";
 
 const Country = () => {
     const [countries, setCountries] = useState([]);
@@ -14,6 +15,23 @@ const Country = () => {
     return (
         <div>
             <h2 className="text-3xl my-14 font-bold text-center">Countries</h2>
+            <div className='mb-20 -mt-20 text-2xl text-center font-semibold'>
+                <h1 style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
+                    Learn more about {' '}
+                    <span style={{ color: 'green', fontWeight: 'bold' }}>
+                        {/* Style will be inherited from the parent element */}
+                        <Typewriter
+                            words={['Bangladesh', 'Thailand', 'Indonesia', 'Malaysia', 'Vietnam', 'Cambodia']}
+                            loop={5}
+                            cursor
+                            cursorStyle='_'
+                            typeSpeed={70}
+                            deleteSpeed={50}
+                            delaySpeed={1000}
+                        />
+                    </span>
+                </h1>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {
                     countries.map(country =>
