@@ -1,12 +1,15 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import Swal from "sweetalert2";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const MyList = () => {
     const { user } = useContext(AuthContext);
     const [places, setPlaces] = useState([]);
+    // const [newPlaces, setNewsPlaces] = useState(places);
+    // console.log(newPlaces)
     // console.log(places)
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch(`http://localhost:5000/touristPlace/${user?.email}`)
@@ -39,6 +42,7 @@ const MyList = () => {
                                 text: "Your place has been deleted.",
                                 icon: "success"
                             });
+                            navigate("/all-tourists-spot")
                         }
                     })
             }
@@ -83,7 +87,7 @@ const MyList = () => {
                                     <td>${place.averageCost}</td>
                                     <th>
                                         <Link to={`/updatePlace/${place._id}`}><button className="btn btn-outline btn-success btn-xs">Update</button></Link>
-                                        <button onClick={()=> handleDelete(place._id)} className="btn btn-outline btn-error btn-xs">Delete</button>
+                                        <button onClick={() => handleDelete(place._id)} className="btn btn-outline btn-error btn-xs">Delete</button>
                                     </th>
                                 </tr>
                             )

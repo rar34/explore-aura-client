@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import HomePlaceCard from "./HomePlaceCard";
+import Country from "./Country";
 
 const Home = () => {
     const loadedPlaces = useLoaderData();
@@ -14,6 +15,7 @@ const Home = () => {
                     loadedPlaces.slice(0,6).map(place => <HomePlaceCard key={place._id} place={place}></HomePlaceCard>)
                 }
             </div>
+            <Country></Country>
         </div>
     );
 };
