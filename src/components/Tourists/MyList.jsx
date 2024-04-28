@@ -1,17 +1,18 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import Swal from "sweetalert2";
+import { Link } from "react-router-dom";
 
 const MyList = () => {
     const { user } = useContext(AuthContext);
     const [places, setPlaces] = useState([]);
-    console.log(places)
+    // console.log(places)
 
     useEffect(() => {
         fetch(`http://localhost:5000/touristPlace/${user?.email}`)
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 setPlaces(data)
             });
     }, [user])
@@ -81,7 +82,7 @@ const MyList = () => {
                                     </td>
                                     <td>${place.averageCost}</td>
                                     <th>
-                                        <button className="btn btn-outline btn-success btn-xs">Update</button>
+                                        <Link to={`/updatePlace/${place._id}`}><button className="btn btn-outline btn-success btn-xs">Update</button></Link>
                                         <button onClick={()=> handleDelete(place._id)} className="btn btn-outline btn-error btn-xs">Delete</button>
                                     </th>
                                 </tr>

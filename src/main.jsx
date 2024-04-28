@@ -16,6 +16,7 @@ import FirebaseProvider from './components/FirebaseProvider/FirebaseProvider.jsx
 import PrivateRoutes from './components/Routes/PrivateRoutes.jsx';
 import ViewDetails from './components/Tourists/ViewDetails.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
+import UpdatePlace from './components/Tourists/UpdatePlace.jsx';
 
 
 const router = createBrowserRouter([
@@ -54,6 +55,11 @@ const router = createBrowserRouter([
         path: "/view-details/:id",
         element: <PrivateRoutes><ViewDetails /></PrivateRoutes>,
         loader: () => fetch("http://localhost:5000/touristPlace")
+      },
+      {
+        path: "/updatePlace/:id",
+        element: <UpdatePlace />,
+        loader: ({ params }) => fetch(`http://localhost:5000/touristPlaces/${params.id}`)
       }
     ]
   },
