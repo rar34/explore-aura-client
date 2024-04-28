@@ -26,7 +26,7 @@ const AllTouristsSpot = () => {
         <div className="px-4 md:px-20 my-10">
             <h2 className="my-14 text-center text-3xl font-bold">All Tourists spot</h2>
             <div className="dropdown dropdown-bottom flex justify-center">
-                <select value={sortBy} onChange={handleSortChange} className="btn m-1 -mt-6 mb-6 bg-[#23BE0A] text-xl font-semibold">
+                <select value={sortBy} onChange={handleSortChange} className="btn btn-success m-1 -mt-6 mb-6 text-white text-xl font-semibold">
                     <option value="">Sort By Average Cost</option>
                     <option value="ascending">Ascending</option>
                     <option value="descending">Descending</option>
