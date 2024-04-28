@@ -4,12 +4,8 @@ import { useState } from "react";
 
 const AllTouristsSpot = () => {
     const loadedPlaces = useLoaderData();
-    // const { averageCost } = loadedPlaces;
-    // console.log(averageCost)
     const [places, setPlaces] = useState(loadedPlaces);
     const [sortBy, setSortBy] = useState(null)
-    // const { averageCost } = loadedPlaces;
-    console.log(places)
 
     const handleSortChange = (e) => {
         setSortBy(e.target.value);

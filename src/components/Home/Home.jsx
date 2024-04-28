@@ -4,7 +4,7 @@ import HomePlaceCard from "./HomePlaceCard";
 
 const Home = () => {
     const loadedPlaces = useLoaderData();
-    console.log(loadedPlaces)
+    // console.log(loadedPlaces)
     return (
         <div className="px-4 md:px-20 my-10">
             <Banner></Banner>

@@ -72,7 +72,7 @@ const Navbar = () => {
                             data-tooltip-content={user?.displayName || user?.email}
                             data-tooltip-place="top">
                             <div className="w-10 rounded-full ">
-                                <img alt="Tailwind CSS Navbar component" src={user?.photoURL || "https://i.ibb.co/ZX6HMzF/pp.jpg"} />
+                                <img alt="Tailwind CSS Navbar component" src={user?.photoURL || "https://i.ibb.co/FDpGqc0/pp.jpg"} />
                             </div>
 
                         </div>
