@@ -29,7 +29,7 @@ const Banner = () => {
                             <div className="max-w-md">
                                 <h1 className="mb-5 text-3xl md:text-5xl font-bold">Cox&apos;s Bazar, Bangladesh</h1>
                                 <p className="mb-5">Cox&apos;s Bazar, Bangladesh: Longest natural sea beach, vibrant culture, seafood delights, and stunning sunsets attract tourists worldwide.</p>
-                                <a href='#products' className="btn btn-success text-white">Explore More</a>
+                                <a href='#explore' className="btn btn-success text-white">Explore More</a>
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const Banner = () => {
                             <div className="max-w-md">
                                 <h1 className="mb-5 text-3xl md:text-5xl font-bold">Ha Long Bay, Vietnam</h1>
                                 <p className="mb-5">UNESCO World Heritage site, iconic limestone karsts, emerald waters, scenic boat tours, and rich cultural heritage allure visitors.</p>
-                                <a href='#products' className="btn btn-success text-white">Explore More</a>
+                                <a href='#explore' className="btn btn-success text-white">Explore More</a>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ const Banner = () => {
                             <div className="max-w-md">
                                 <h1 className="mb-5 text-3xl md:text-5xl font-bold">Kuala Lumpur, Malaysia,</h1>
                                 <p className="mb-5">Kuala Lumpur: vibrant capital of Malaysia, known for its diverse culture, iconic Petronas Towers, bustling markets, and delicious street food.</p>
-                                <a href='#products' className="btn btn-success text-white">Explore More</a>
+                                <a href='#explore' className="btn btn-success text-white">Explore More</a>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ const Banner = () => {
                             <div className="max-w-md">
                                 <h1 className="mb-5 text-3xl md:text-5xl font-bold">Bangkok, Thailand</h1>
                                 <p className="mb-5">Bangkok: Thailand&apos;s bustling capital, famous for ornate temples, vibrant street life, floating markets, and exquisite cuisine blending sweet, sour, and spicy flavors.</p>
-                                <a href='#products' className="btn btn-success text-white">Explore More</a>
+                                <a href='#explore' className="btn btn-success text-white">Explore More</a>
                             </div>
                         </div>
                     </div>
