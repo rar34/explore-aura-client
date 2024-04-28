@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import HomePlaceCard from "./HomePlaceCard";
 import Country from "./Country";
 import NewsLetter from "./NewsLetter";
+import Offer from "./Offer";
 
 const Home = () => {
     const loadedPlaces = useLoaderData();
@@ -20,6 +21,7 @@ return (
             }
         </div>
         <Country></Country>
+        <Offer></Offer>
         <NewsLetter />
     </div>
 );
