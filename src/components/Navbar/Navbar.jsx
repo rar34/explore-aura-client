@@ -36,12 +36,20 @@ const Navbar = () => {
     }
 
     const navLinks = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/all-tourists-spot">All Tourists Spot</NavLink></li>
+        <li><NavLink style={({ isActive }) => {
+            return isActive ? { backgroundColor: "#00935F" } : {};
+        }} to="/">Home</NavLink></li>
+        <li><NavLink style={({ isActive }) => {
+            return isActive ? { backgroundColor: "#00935F" } : {};
+        }} to="/all-tourists-spot">All Tourists Spot</NavLink></li>
         {
             user && <>
-                <li><NavLink to="/add-tourists-spot">Add Tourists Spot</NavLink></li>
-                <li><NavLink to="/my-list">My List</NavLink></li>
+                <li><NavLink style={({ isActive }) => {
+                    return isActive ? { backgroundColor: "#00935F" } : {};
+                }} to="/add-tourists-spot">Add Tourists Spot</NavLink></li>
+                <li><NavLink style={({ isActive }) => {
+                    return isActive ? { backgroundColor: "#00935F" } : {};
+                }} to="/my-list">My List</NavLink></li>
             </>
         }
     </>
@@ -58,7 +66,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl md:text-3xl font-bold"><img className="w-44 md:w-72 -ml-14" src="https://i.ibb.co/61VbFbd/explore-aura.png" alt="" /></a>
+                <Link to="/" className="btn btn-ghost text-xl md:text-3xl font-bold"><img className="w-44 md:w-72 -ml-14" src="https://i.ibb.co/61VbFbd/explore-aura.png" alt="ExploreAura" /></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu font-bold text-lg menu-horizontal px-1">
@@ -66,7 +74,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                {user ?<>
+                {user ? <>
                     <div className="dropdown dropdown-end " >
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar" data-tooltip-id="my-tooltip"
                             data-tooltip-content={user?.displayName || user?.email}
@@ -81,7 +89,7 @@ const Navbar = () => {
                         </ul> */}
                     </div>
                     <Link to="/login"><button className="btn btn-outline btn-success btn-sm mx-2" onClick={handleLogOut}>Logout</button></Link>
-                    </>
+                </>
                     :
                     <>
                         <Link to="/login"><button className="btn btn-success btn-xs md:btn-md text-white mr-2">Login</button></Link>
