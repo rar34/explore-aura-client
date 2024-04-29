@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import { Link, useNavigate } from "react-router-dom";
 
 const MyList = () => {
+    const [loading, setLoading] = useState(true)
     const { user } = useContext(AuthContext);
     const [places, setPlaces] = useState([]);
     // const [newPlaces, setNewsPlaces] = useState(places);
@@ -11,14 +12,20 @@ const MyList = () => {
     // console.log(places)
     const navigate = useNavigate();
 
+    
     useEffect(() => {
         fetch(`https://explore-aura-server.vercel.app/touristPlace/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
+                setLoading(false)
                 setPlaces(data)
             });
-    }, [user])
+    }, [user, setLoading])
+
+    if(loading){
+        return <div className="text-center my-14"><span className="loading loading-spinner loading-lg"></span></div>
+    }
 
     const handleDelete = id => {
         Swal.fire({
