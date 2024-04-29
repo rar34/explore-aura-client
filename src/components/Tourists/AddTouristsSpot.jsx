@@ -24,7 +24,7 @@ const AddTouristsSpot = () => {
 
         // console.log(newPlace)
         // send data to the server
-        fetch("http://localhost:5000/touristPlace",{
+        fetch("https://explore-aura-server.vercel.app/touristPlace",{
             method: 'POST',
             headers: { 'content-type': 'application/json'},
             body: JSON.stringify(newPlace)

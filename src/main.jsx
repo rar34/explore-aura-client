@@ -29,7 +29,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:5000/touristPlace")
+        loader: () => fetch("https://explore-aura-server.vercel.app/touristPlace")
       },
       {
         path: "/login",
@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       {
         path: "/all-tourists-spot",
         element: <AllTouristsSpot />,
-        loader: () => fetch("http://localhost:5000/touristPlace")
+        loader: () => fetch("https://explore-aura-server.vercel.app/touristPlace")
       },
       {
         path: "/add-tourists-spot",
@@ -55,17 +55,17 @@ const router = createBrowserRouter([
       {
         path: "/view-details/:id",
         element: <PrivateRoutes><ViewDetails /></PrivateRoutes>,
-        loader: () => fetch("http://localhost:5000/touristPlace")
+        loader: () => fetch("https://explore-aura-server.vercel.app/touristPlace")
       },
       {
         path: "/updatePlace/:id",
         element: <UpdatePlace />,
-        loader: ({ params }) => fetch(`http://localhost:5000/touristPlaces/${params.id}`)
+        loader: ({ params }) => fetch(`https://explore-aura-server.vercel.app/touristPlaces/${params.id}`)
       },
       {
         path: "/countryDetails/:country_name",
         element: <CountryDetails />,
-        loader: () => fetch("http://localhost:5000/touristPlace")
+        loader: () => fetch("https://explore-aura-server.vercel.app/touristPlace")
       }
     ]
   },

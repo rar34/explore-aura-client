@@ -21,7 +21,7 @@ const UpdatePlace = () => {
 
         const updatedPlace = { tourists_spot_name, country_name, location, image, seasonality, averageCost, travel_time, totalVisitorsPerYear, short_description }
         form.reset();
-        fetch(`http://localhost:5000/touristPlace/${_id}`, {
+        fetch(`https://explore-aura-server.vercel.app/touristPlace/${_id}`, {
             method: 'PUT',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(updatedPlace)

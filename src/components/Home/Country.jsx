@@ -5,7 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 const Country = () => {
     const [countries, setCountries] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/country')
+        fetch('https://explore-aura-server.vercel.app/country')
             .then(res => res.json())
             .then(data => {
                 console.log(data)
