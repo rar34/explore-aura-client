@@ -1,8 +1,19 @@
-# React + Vite
+Website Name: ExploreAura <br/>
+live URL: https://explore-aura.web.app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- This website contains a navbar linked with all components. User can browser his/her specific page from homepage.
 
-Currently, two official plugins are available:
+- User can add their favorite place here if he/she logged in.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User can also update and delete from my list page.
+
+- There is a countries section that contains 6 countries card and when user clicked on those card he/she can see all the available spots of that countries.
+
+- A beautiful footer is shown in every page.
+
+- User can logged in using his/her google account and also using gitHub account.
+
+Packages are used in this project:
+- React-tooltip
+- React-simple-typewriter
+- aos Animation

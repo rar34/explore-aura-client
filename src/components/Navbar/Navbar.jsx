@@ -58,7 +58,7 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl md:text-3xl font-bold">ExploreAura</a>
+                <a className="btn btn-ghost text-xl md:text-3xl font-bold"><img className="w-44 md:w-72 -ml-14" src="https://i.ibb.co/61VbFbd/explore-aura.png" alt="" /></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu font-bold text-lg menu-horizontal px-1">
