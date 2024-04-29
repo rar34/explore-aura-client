@@ -18,23 +18,24 @@ const ViewDetails = () => {
 
     return (
         <div className="card card-compact md:p-24 md:w-2/3 mx-auto my-14 bg-base-100 shadow-xl">
-            <figure><img className="p-2" src={image} alt="" /></figure>
-            <div className="card-body">
+            <figure data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="1500"><img className="p-2" src={image} alt="" /></figure>
+            <div className="card-body" data-aos="zoom-out-right" data-aos-delay="1000">
                 <h2 className="text-2xl md:text-5xl font-bold">{tourists_spot_name}</h2>
                 <h3 className="text-xl font-semibold md:text-3xl">{country_name}</h3>
                 <h3 className="text-xl font-semibold md:text-xl">Located In: <span className="text-gray-500">{location}</span></h3>
                 <p className="font-semibold">{short_description}</p>
                 <table className="table">
-                    
+
                     <tbody>
-                        {/* row 1 */}
                         <tr className="font-bold">
                             <td>Travel Time: {travel_time}</td>
                             <td>Seasonality: {seasonality}</td>
                         </tr>
                         <tr className="font-bold">
                             <td>Total Visitor Per Year: {totalVisitorsPerYear}</td>
-                            <td>Average Cost: {averageCost}</td>
+                            <td>Average Cost: ${averageCost}</td>
                         </tr>
                     </tbody>
                 </table>

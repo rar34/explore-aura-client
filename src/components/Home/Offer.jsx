@@ -1,7 +1,9 @@
 
 const Offer = () => {
     return (
-        <div className="min-h-96 my-14 flex flex-col md:flex-row p-10 items-center justify-center gap-10 md:gap-24 rounded-xl" style={{ backgroundImage: 'url(https://i.ibb.co/QfhsGxV/bali.jpg)' }}>
+        <div data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" className="min-h-96 my-14 flex flex-col md:flex-row p-10 items-center justify-center gap-10 md:gap-24 rounded-xl" style={{ backgroundImage: 'url(https://i.ibb.co/QfhsGxV/bali.jpg)' }}>
             <img className="w-96" src="https://i.ibb.co/v40L921/offer.png" alt="" />
             <div className="space-y-4">
                 <h2 className="text-5xl font-bold text-white">Exciting Offer For You</h2>

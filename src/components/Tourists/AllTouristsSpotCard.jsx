@@ -5,7 +5,9 @@ const AllTouristsSpotCard = ({ place }) => {
     // console.log(place)
     const { _id, image, tourists_spot_name, averageCost, totalVisitorsPerYear, travel_time, seasonality } = place;
     return (
-        <div className="card bg-base-100 shadow-xl">
+        <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500" className="card bg-base-100 shadow-xl">
             <figure><img src={image} alt="" /></figure>
             <div className="card-body">
                 <h2 className="card-title">{tourists_spot_name}</h2>

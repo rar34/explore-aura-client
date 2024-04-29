@@ -66,7 +66,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                {user ?
+                {user ?<>
                     <div className="dropdown dropdown-end " >
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar" data-tooltip-id="my-tooltip"
                             data-tooltip-content={user?.displayName || user?.email}
@@ -76,10 +76,12 @@ const Navbar = () => {
                             </div>
 
                         </div>
-                        <ul tabIndex={0} className="mt-3 z-[10] p-2 shadow menu menu-sm text-white font-bold dropdown-content bg-neutral w-32">
+                        {/* <ul tabIndex={0} className="mt-3 z-[10] p-2 shadow menu menu-sm text-white font-bold dropdown-content bg-neutral w-32">
                             <li className="hover:bg-gray-500"><Link to="/login"><button onClick={handleLogOut}>Logout</button></Link></li>
-                        </ul>
+                        </ul> */}
                     </div>
+                    <Link to="/login"><button className="btn btn-outline btn-success btn-sm mx-2" onClick={handleLogOut}>Logout</button></Link>
+                    </>
                     :
                     <>
                         <Link to="/login"><button className="btn btn-success btn-xs md:btn-md text-white mr-2">Login</button></Link>

@@ -36,7 +36,7 @@ const Country = () => {
                 {
                     countries.map(country =>
                         <Link key={country._id} to={`/countryDetails/${country.country_name}`}>
-                            <div className="card card-compact bg-base-100 shadow-lg">
+                            <div className="card card-compact bg-base-100 shadow-lg" data-aos="zoom-out" data-aos-delay="400">
                                 <figure><img src={country.image} alt="" /></figure>
                                 <div className="card-body">
                                     <h2 className="card-title">{country.country_name}</h2>

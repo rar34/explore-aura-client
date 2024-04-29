@@ -11,7 +11,9 @@ const NewsLetter = () => {
     }
 
     return (
-        <div className="min-h-96 flex items-center p-3 justify-center my-14 rounded-xl" style={{ backgroundImage: 'url(https://i.ibb.co/fFBT7Xr/coxsbazar.jpg)' }}>
+        <div data-aos="flip-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000" className="min-h-96 flex items-center p-3 justify-center my-14 rounded-xl" style={{ backgroundImage: 'url(https://i.ibb.co/fFBT7Xr/coxsbazar.jpg)' }}>
             <div className="text-center space-y-4">
                 <h2 className="text-2xl md:text-5xl font-bold">Subscribe to our NEWSLETTER</h2>
                 <p className="font-bold">Subscribe to our NEWSLETTER and stay updated</p>
