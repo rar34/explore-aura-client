@@ -82,8 +82,8 @@ const Navbar = () => {
                     </div>
                     :
                     <>
-                        <Link to="/login"><button className="btn btn-success text-white mr-3">Login</button></Link>
-                        <Link to="/register"><button className="btn btn-success text-white">Register</button></Link>
+                        <Link to="/login"><button className="btn btn-success btn-xs md:btn-md text-white mr-2">Login</button></Link>
+                        <Link to="/register"><button className="btn btn-success btn-xs md:btn-md text-white mr-2">Register</button></Link>
                     </>
                 }
                 <label className="cursor-pointer grid place-items-center">
