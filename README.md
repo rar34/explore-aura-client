@@ -13,18 +13,18 @@ Server side: https://github.com/rar34/explore-aura-server
 <h2>Usage Technologies</h2>
 <ul>
   <li>ReactJS</li>
+  <li>expressjs</li>
+  <li>mongodb</li>
+  <li>JavaScript</li>
+  <li>Tailwind css</li>
+  <li>daisyui</li>
+  <li>HTML</li>
+  <li>react-hook-form</li>
+  <li>react simple typewritter</li>
+  <li>sweetalert2</li>
+  <li>swiperjs</li>
 </ul>
-- Reactjs
-- expressjs
-- mongodb
-- JavaScript
-- Tailwind css
-- daisyui
-- HTML
-- react-hook-form
-- react simple typewritter
-- sweetalert2
-- swiperjs
+
 
 Packages are used in this project:
 - React-tooltip
