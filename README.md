@@ -1,4 +1,4 @@
-Website Name: ExploreAura <br/>
+<h1>Website Name: ExploreAura</h1> <br/>
 live URL: https://explore-aura.web.app <br />
 Server side: https://github.com/rar34/explore-aura-server
 
