@@ -33,3 +33,13 @@ Packages are used in this project:
 - React-tooltip
 - React-simple-typewriter
 - aos Animation
+
+<h4>If you want to clone and run it in your local server</h4>
+<p>For client side</p>
+-> git clone <br />
+-> npm install <br />
+-> npm run dev <br />
+<p>For server side</p>
+-> git clone <br />
+-> npm install <br />
+-> nodemon index.js <br />
