@@ -11,7 +11,10 @@ Server side: https://github.com/rar34/explore-aura-server
 - User can logged in using his/her google account and also using gitHub account.
 - User can sort all spot by average cost in ascending and descending order 
 <h2>Usage Technologies</h2>
-# Reactjs
+<ul>
+  <li>ReactJS</li>
+</ul>
+- Reactjs
 - expressjs
 - mongodb
 - JavaScript
