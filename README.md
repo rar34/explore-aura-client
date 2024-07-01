@@ -1,5 +1,5 @@
 Website Name: ExploreAura <br/>
-live URL: https://explore-aura.web.app
+live URL: https://explore-aura.web.app <br />
 Server side: https://github.com/rar34/explore-aura-server
 
 <h2>Features</h2>
