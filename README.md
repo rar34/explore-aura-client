@@ -1,5 +1,6 @@
 <h1>Website Name: ExploreAura</h1> <br/>
-live URL: https://explore-aura.web.app <br />
+<p>A medical camp related website where a dashboard for admin and a dashboard for participant. Admin can post medical related camp and people can participated using stripe payment.</p>
+live URL: https://medcamporganizer.web.app <br />
 Server side: https://github.com/rar34/explore-aura-server
 
 <h2>Features</h2>
