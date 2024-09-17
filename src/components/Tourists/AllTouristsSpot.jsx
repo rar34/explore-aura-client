@@ -24,10 +24,11 @@ const AllTouristsSpot = () => {
     };
     return (
         <div className="px-4 md:px-20 my-10">
-            <h2 className="my-14 text-center text-3xl font-bold">All Tourists spot</h2>
+            <h2 className="mt-14 text-center text-3xl font-bold">All Tourists spot</h2>
+            <p className="text-center md:w-1/2 mx-auto text-xl mt-4 mb-10">Discover some of the most captivating tourist destinations around the world! From serene beaches to bustling cities, and historic landmarks to natural wonders, every spot offers a unique experience.</p>
             <div className="dropdown dropdown-bottom flex justify-center">
                 <select value={sortBy} onChange={handleSortChange} className="btn btn-success m-1 -mt-6 mb-6 text-white text-xl font-semibold">
-                    <option value="">Sort By Average Cost</option>
+                    <option disabled value="">Sort By Average Cost</option>
                     <option value="ascending">Ascending</option>
                     <option value="descending">Descending</option>
                 </select>
